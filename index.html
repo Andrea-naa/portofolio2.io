@@ -3,34 +3,256 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Andreanoe Meitin</title>
+  <title>Andreanoe Meitin - Fullstack Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="index.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
 </head>
 <body>
+  <!-- Background particles -->
+  <div class="bg-particles" id="particles"></div>
+
   <header>
     <nav class="top-nav">
       <ul>
-        <li><a href="index.html">Beranda</a></li>
-        <li><a href="keahlian.html">Keahlian</a></li>
-        <li><a href="projek.html">Proyek</a></li>
-        <li><a href="kontak.html">Kontak</a></li>
+        <li><a href="#beranda" class="nav-link active" data-section="beranda">Beranda</a></li>
+        <li><a href="#keahlian" class="nav-link" data-section="keahlian">Keahlian</a></li>
+        <li><a href="#projek" class="nav-link" data-section="projek">Proyek</a></li>
+        <li><a href="#kontak" class="nav-link" data-section="kontak">Kontak</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="hero-section">
-    <div class="profile-box">
-      <img src="gambar/foto.jpg" alt="Foto Profil Andreanoe" class="profile-img" />
-      <div class="profile-content">
-        <h1>Andreanoe Meitin</h1>
-        <p>Saya adalah pengembang web dan jaringan yang berorientasi pada solusi, dengan semangat tinggi terhadap teknologi, desain digital, dan sistem informasi. Saya menikmati proses membangun sesuatu dari awal baik itu topologi jaringan yang kompleks maupun antarmuka web yang sederhana. Ketekunan dan rasa ingin tahu mendorong saya untuk terus belajar, menyempurnakan keterampilan teknis, dan menciptakan solusi yang efisien serta berdampak nyata</p>
-        <div class="cta-buttons">
-          <a href="kontak.html" class="btn">Hubungi Saya</a>
-          <a href="projek.html" class="btn btn-outline">Lihat Proyek</a>
+  <div class="container">
+    <!-- Beranda Section -->
+    <section id="beranda" class="section active">
+      <!-- Hero Box -->
+      <div class="hero-box">
+        <div class="hero-content">
+          <div class="hero-img-wrapper">
+            <img src="gambar/foto.jpg" alt="Foto Profil Andreanoe" class="hero-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22250%22 height=%22250%22%3E%3Crect fill=%22%2364ffda%22 width=%22250%22 height=%22250%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2280%22 fill=%22%230a192f%22%3EAM%3C/text%3E%3C/svg%3E'" />
+          </div>
+          <div class="hero-text">
+            <div class="hero-tagline">Hello, Saya <span class="highlight">Andreanoe Meitin</span></div>
+            <p class="hero-name">Web & Network Developer</p>
+            <div class="hero-buttons">
+              <a href="#kontak" class="btn nav-link" data-section="kontak">
+                <i data-lucide="mail"></i>
+                Hubungi Saya
+              </a>
+              <a href="#projek" class="btn btn-outline nav-link" data-section="projek">
+                <i data-lucide="folder"></i>
+                Lihat Proyek
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
+
+      <!-- About Box -->
+      <div class="about-box">
+        <h2>Tentang Saya</h2>
+        <div class="about-text">
+          <p>Saya adalah pengembang web dan jaringan yang berorientasi pada solusi, dengan semangat tinggi terhadap teknologi, desain digital, dan sistem informasi. Saya menikmati proses membangun sesuatu dari awal baik itu topologi jaringan yang kompleks maupun antarmuka web yang sederhana. Ketekunan dan rasa ingin tahu mendorong saya untuk terus belajar, menyempurnakan keterampilan teknis, dan menciptakan solusi yang efisien serta berdampak nyata.</p>
+        </div>
+      </div>
+
+      <!-- Vision & Mission -->
+      <div class="vision-mission-grid">
+        <div class="vm-card">
+          <h3>
+            <i data-lucide="eye"></i>
+            Visi
+          </h3>
+          <p>Menjadi profesional teknologi yang mampu menciptakan solusi digital inovatif dan infrastruktur jaringan yang handal untuk mendukung transformasi digital di Indonesia.</p>
+        </div>
+
+        <div class="vm-card">
+          <h3>
+            <i data-lucide="target"></i>
+            Misi
+          </h3>
+          <ul>
+            <li>
+              <i data-lucide="check-circle"></i>
+              <span>Mengembangkan aplikasi web yang user-friendly dan berdampak positif</span>
+            </li>
+            <li>
+              <i data-lucide="check-circle"></i>
+              <span>Merancang infrastruktur jaringan yang efisien dan aman</span>
+            </li>
+            <li>
+              <i data-lucide="check-circle"></i>
+              <span>Terus belajar dan mengadopsi teknologi terkini</span>
+            </li>
+            <li>
+              <i data-lucide="check-circle"></i>
+              <span>Berkontribusi pada proyek-proyek yang memberikan nilai tambah bagi masyarakat</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Keahlian Section -->
+    <section id="keahlian" class="section">
+      <div class="profile-box">
+        <h2>Keahlian Saya</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Hard Skills</h3>
+            <div class="skill-item">
+              <i data-lucide="code" class="skill-icon"></i>
+              <span>HTML & CSS</span>
+            </div>
+            <div class="skill-item">
+              <i data-lucide="coffee" class="skill-icon"></i>
+              <span>Java</span>
+            </div>
+            <div class="skill-item">
+              <i data-lucide="terminal" class="skill-icon"></i>
+              <span>Python</span>
+            </div>
+            <div class="skill-item">
+              <i data-lucide="network" class="skill-icon"></i>
+              <span>Cisco Packet Tracer</span>
+            </div>
+            <div class="skill-item">
+              <i data-lucide="file-text" class="skill-icon"></i>
+              <span>Microsoft Office</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Soft Skills</h3>
+            <div class="skill-item">
+              <i data-lucide="lightbulb" class="skill-icon"></i>
+              <span>Problem Solving</span>
+            </div>
+            <div class="skill-item">
+              <i data-lucide="users" class="skill-icon"></i>
+              <span>Kerja Tim</span>
+            </div>
+            <div class="skill-item">
+              <i data-lucide="message-circle" class="skill-icon"></i>
+              <span>Komunikasi Efektif</span>
+            </div>
+            <div class="skill-item">
+              <i data-lucide="clock" class="skill-icon"></i>
+              <span>Manajemen Waktu</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projek Section -->
+    <section id="projek" class="section">
+      <div class="profile-box">
+        <h2>Pengalaman Proyek</h2>
+        
+        <div class="project-card">
+          <h3>
+            <i data-lucide="network" class="skill-icon"></i>
+            Simulasi Jaringan OSPF & BGP
+            <span class="year">(2025)</span>
+          </h3>
+          <p>Merancang dan mengonfigurasi topologi jaringan yang menghubungkan jaringan privat (OSPF) dan publik (BGP) menggunakan beberapa router dan server. Proyek ini memperkuat pemahaman saya tentang routing dinamis dan manajemen trafik antar jaringan. Saya juga menguji konektivitas dan keamanan antar node menggunakan skenario realistis berbasis Cisco Packet Tracer.</p>
+        </div>
+
+        <div class="project-card">
+          <h3>
+            <i data-lucide="globe" class="skill-icon"></i>
+            Website Portofolio UKM POWERS
+            <span class="year">(2025)</span>
+          </h3>
+          <p>Membangun website portofolio responsif menggunakan HTML dan CSS untuk menampilkan karya dan informasi UKM POWERS. Saya berkolaborasi dengan tim UKM untuk memahami kebutuhan konten dan menerjemahkannya ke dalam struktur web yang efektif. Proyek ini mengasah kemampuan saya dalam desain antarmuka, pengujian lintas browser, dan pengembangan web yang berorientasi pada pengguna.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="section">
+      <div class="profile-box">
+        <h2>Kontak Saya</h2>
+        <div class="contact-grid">
+          <a href="mailto:noeemeitin@gmail.com" class="contact-item">
+            <i data-lucide="mail" class="contact-icon"></i>
+            <div>
+              <div style="font-size: 14px; color: #8892b0; margin-bottom: 5px;">Email</div>
+              <span>noeemeitin@gmail.com</span>
+            </div>
+          </a>
+          
+          <a href="https://www.linkedin.com/in/andreanoe-meitin-9b7261390/" target="_blank" class="contact-item">
+            <i data-lucide="linkedin" class="contact-icon"></i>
+            <div>
+              <div style="font-size: 14px; color: #8892b0; margin-bottom: 5px;">LinkedIn</div>
+              <span>Andreanoe Meitin</span>
+            </div>
+          </a>
+          
+          <a href="https://github.com/Andrea-naa" target="_blank" class="contact-item">
+            <i data-lucide="github" class="contact-icon"></i>
+            <div>
+              <div style="font-size: 14px; color: #8892b0; margin-bottom: 5px;">GitHub</div>
+              <span>Andrea-naa</span>
+            </div>
+          </a>
+          
+          <a href="https://www.instagram.com/noble.noe01?igsh=ZzE0dTNoZmZiNWJ3" target="_blank" class="contact-item">
+            <i data-lucide="instagram" class="contact-icon"></i>
+            <div>
+              <div style="font-size: 14px; color: #8892b0; margin-bottom: 5px;">Instagram</div>
+              <span>@noble.noe01</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Create floating particles
+    const particlesContainer = document.getElementById('particles');
+    for (let i = 0; i < 15; i++) {
+      const particle = document.createElement('div');
+      particle.className = 'particle';
+      const size = Math.random() * 6 + 2;
+      particle.style.width = size + 'px';
+      particle.style.height = size + 'px';
+      particle.style.left = Math.random() * 100 + '%';
+      particle.style.top = Math.random() * 100 + '%';
+      particle.style.animationDelay = Math.random() * 20 + 's';
+      particle.style.animationDuration = (Math.random() * 10 + 15) + 's';
+      particlesContainer.appendChild(particle);
+    }
+
+    // Navigation functionality
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('.section');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetSection = link.getAttribute('data-section');
+        
+        // Remove active class from all links and sections
+        navLinks.forEach(l => l.classList.remove('active'));
+        sections.forEach(s => s.classList.remove('active'));
+        
+        // Add active class to clicked link and target section
+        link.classList.add('active');
+        document.getElementById(targetSection).classList.add('active');
+        
+        // Smooth scroll to top
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+  </script>
 </body>
 </html>
