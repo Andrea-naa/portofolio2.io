@@ -5,8 +5,10 @@
     }
 
     body {
+      background-image: url('gambar/fotobg.jpg');
+      background-size: cover;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #0a192f 0%, #112240 100%);
+      /* background: linear-gradient(135deg, #0a192f 0%, #112240 100%); */
       color: #e6f1ff;
       min-height: 100vh;
       overflow-x: hidden;
